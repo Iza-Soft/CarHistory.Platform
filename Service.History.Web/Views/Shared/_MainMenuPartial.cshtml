@@ -1,0 +1,20 @@
+﻿<nav class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse menu">
+    <ul class="navbar-nav flex-grow-1">
+        @(Html.Kendo().Menu().Name(MainMenuResources.TitleMenuName)
+            .HighlightPath(false)
+            .Animation(true)
+            .Items(items =>
+            {
+                items.Add().Text(MainMenuResources.TitleHome).Action(nameof(HomeController.Index), this._pages.Controller<HomeController>(), new { Area = this._pages.Area<HomeController>() }).Visible(User.Identity!.IsAuthenticated);
+                items.Add().Text("Services").Action("", "", new { Area = "" }).Visible(User.Identity!.IsAuthenticated);
+                items.Add().Text("View").Action("", "", new { Area = "" }).Visible(User.Identity!.IsAuthenticated);
+                items.Add().Text("Management").Action("", "", new { Area = "" }).Visible(User.Identity!.IsAuthenticated);
+@*              items.Add().Text(MainMenuResources.TitleVehicles).Items(child =>
+                {
+                    child.Add().Text(MainMenuResources.SubTitleVehicleSetup).Action("", "", new { Area = "" });
+                    child.Add().Text(MainMenuResources.SubTitleVehicleList).Action("", "", new { Area = "" });
+                }).Visible(false);*@
+                @*items.Add().Text(MainMenuResources.TitleLogOut).Action("logout", "Account", new {Area = ""}).Enabled(true).Visible(User.Identity!.IsAuthenticated);*@
+            }))
+    </ul>
+</nav>

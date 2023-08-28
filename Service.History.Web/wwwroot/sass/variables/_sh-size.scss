@@ -1,0 +1,39 @@
+﻿@mixin text-size($size){
+    font-size: $size;
+}
+
+@mixin margin-top($size) {
+    margin-top: $size;
+}
+
+@mixin margin-bottom($size) {
+    margin-bottom: $size;
+}
+
+@mixin max-height($height) {
+    max-height: $height;
+}
+
+@mixin min-height($height) {
+    min-height: $height;
+}
+
+@mixin max-width($width) {
+    max-width: $width;
+}
+
+@mixin min-width($width) {
+    min-width: $width;
+}
+
+@mixin line-height($height) {
+    line-height: $height;
+}
+
+@mixin width($width){
+    width: $width;
+}
+
+@mixin height($height) {
+    height: $height;
+}

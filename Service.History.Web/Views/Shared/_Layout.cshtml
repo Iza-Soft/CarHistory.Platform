@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service History - @this._pages.Title</title>
+
+    @{
+        await Html.RenderPartialAsync("_ValidationCSSPartial");
+
+        await Html.RenderPartialAsync("_ValidationJSPartial");
+    }
+</head>
+<body>
+    <header class="border-bottom header text-muted">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6">&nbsp;</div>
+                <div class="col-md-6">
+                    @{
+                        await Html.RenderPartialAsync("_MainMenuPartial");
+                    }
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <main role="main" class="pb-3">
+        <div class="container-fluid">@this._pages.Title </div>
+        <div class="container-xl">@RenderBody()</div>
+    </main>
+    <footer class="border-top footer text-muted text-center">
+        <div class="container">
+            Copyright &copy; @DateTime.Now.Year. All rights reserved.
+        </div>
+    </footer>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

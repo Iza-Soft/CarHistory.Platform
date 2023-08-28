@@ -1,0 +1,35 @@
+﻿/*https://encycolorpedia.com/*/
+html {
+  font-size: 1em; }
+
+@media (min-width: 768px) {
+  html {
+    font-size: 1em; } }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-bottom: 3.75rem; }
+
+.footer, .header {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 3.75rem;
+  background-color: #606060;
+  color: #ffffff !important; }
+
+.header {
+  position: static !important;
+  background-color: #ffffff !important; }
+
+main > .container-fluid {
+  color: #ffffff;
+  line-height: 3.75rem;
+  background-color: #606060; }

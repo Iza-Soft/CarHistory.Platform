@@ -1,0 +1,24 @@
+version: '3.5'
+
+services:
+  service.history.web:
+    image: ${DOCKER_REGISTRY-}service.history.web
+    ports:
+      - 30001:443
+    build:
+      context: .
+      dockerfile: Service.History.Web/Dockerfile
+    depends_on: 
+      - db
+  db:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    user: root
+    hostname: sql_server
+    container_name: sql_server_sh
+    ports:
+        - "1432:1433"
+    environment:
+        - ACCEPT_EULA=Y
+        - MSSQL_SA_PASSWORD=Password123!
+    volumes: 
+        - ./data:/var/opt/mssql/data  

@@ -1,0 +1,48 @@
+﻿nav {
+    &.menu {
+        float: right;
+        position: relative;
+        top: 100%;
+        transform: translateY(-100%);
+    }
+}
+
+ul {
+    &#MainMenu > li {
+        &.k-item {
+            background-color: $white;
+            border-style: none;
+        }
+    }
+}
+
+ul {
+    &#MainMenu {
+        &.k-menu {
+            border: 0px;
+        }
+    }
+}
+
+.k-state-border-down > .k-link, .k-state-hover > .k-link {
+    background-color: $medium-dark-shade-of-gray !important;
+    color: $white !important;
+}
+
+div {
+    &.k-animation-container > ul {
+        &.k-group {
+            background-color: #606060 !important;
+            color: $white !important;
+        }
+    }
+}
+
+.k-item > div {
+    &.k-animation-container > ul {
+        &.k-group > .k-state-hover > .k-link {
+            background-color: $white !important;
+            color: $black !important;
+        }
+    }
+}

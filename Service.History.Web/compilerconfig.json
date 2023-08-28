@@ -1,0 +1,10 @@
+[
+  {
+    "outputFile": "wwwroot/css/page.main.css",
+    "inputFile": "wwwroot/sass/page.main.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/kendo.ui.custom.css",
+    "inputFile": "wwwroot/sass/kendo.ui.custom.scss"
+  }
+]

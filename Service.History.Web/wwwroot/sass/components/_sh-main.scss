@@ -1,0 +1,42 @@
+﻿html {
+    @include text-size($size: 1em);
+}
+
+@media (min-width: 768px) {
+    html {
+        @include text-size($size: 1em);
+    }
+}
+
+html {
+    position: relative;
+    @include min-height($height: 100%);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @include margin-bottom($size: 3.75rem);
+}
+
+.footer, .header {
+    position: absolute;
+    bottom: 0;
+    @include width($width: 100%);
+    white-space: nowrap;
+    @include line-height($height: 3.75rem);
+    background-color: $medium-dark-shade-of-gray;
+    color: $white !important;
+}
+
+.header {
+    position: static !important;
+    background-color: $white !important;
+}
+
+main > .container-fluid {
+    color: $white;
+    @include line-height($height: 3.75rem);
+    background-color: $medium-dark-shade-of-gray;
+}

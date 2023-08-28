@@ -1,0 +1,25 @@
+﻿/*https://encycolorpedia.com/*/
+nav.menu {
+  float: right;
+  position: relative;
+  top: 100%;
+  transform: translateY(-100%); }
+
+ul#MainMenu > li.k-item {
+  background-color: #ffffff;
+  border-style: none; }
+
+ul#MainMenu.k-menu {
+  border: 0px; }
+
+.k-state-border-down > .k-link, .k-state-hover > .k-link {
+  background-color: #606060 !important;
+  color: #ffffff !important; }
+
+div.k-animation-container > ul.k-group {
+  background-color: #606060 !important;
+  color: #ffffff !important; }
+
+.k-item > div.k-animation-container > ul.k-group > .k-state-hover > .k-link {
+  background-color: #ffffff !important;
+  color: #000000 !important; }
